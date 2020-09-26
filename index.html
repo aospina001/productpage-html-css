@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>SHOPSHOP - Product Page</title>
 </head>
 <body>
     <div class="navbar flex">
-        <div class="logo">
-            <p>SHOPSHOP</p>
+        <div class="navbar-container flex">
+            <div class="logo">
+                <p>SHOPSHOP</p>
+            </div>
+            <div class="navbar-buttons flex">
+                <a href="#">Products</a>
+                <a href="#">About</a>
+                <a href="#">My Account</a>
+                <a href="#">Cart (0)</a>
+            </div>
         </div>
-        <div class="navbar-buttons flex">
-            <a href="#">Products</a>
-            <a href="#">About</a>
-            <a href="#">My Account</a>
-            <a href="#">Cart (0)</a>
-        </div>
-        <span class="top-line"></span>
+        <span class="line flex"></span>
     </div>
     <div class="container flex">
         <div class="guide flex">
@@ -25,20 +28,20 @@
             <p>/</p>
             <a href="#">Household Plants</a>
             <p>/</p>
-            <a href="#">Bonsai</a>
+            <a href="#" class="guide-active">Bonsai</a>
         </div>
-        <div class="main">
+        <div class="main flex">
             <div class="main-left flex">
                 <div class="main-left-top">
-                    <img src="/src/assets/product3.jpeg" alt="">
+                    <div class="main-image flex"></div>
                 </div>
                 <div class="main-left-bottom flex">
-                    <img src="/src/assets/product3.jpeg" alt="">
-                    <img src="/src/assets/product2.jpeg" alt="">
-                    <img src="/src/assets/product1.jpeg" alt="">
+                    <div class="product-image1"></div>
+                    <div class="product-image2"></div>
+                    <div class="product-image3"></div>
                 </div>
             </div>
-            <div class="main-right">
+            <div class="main-right flex">
                 <h1>Bonsai</h1>
                 <h1>$19.99</h1>
                 <span class="line"></span>

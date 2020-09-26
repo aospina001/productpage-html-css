@@ -1,6 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid red;
+    font-family: 'Roboto', sans-serif;
 }
 .flex {
     display: flex;
@@ -11,32 +10,50 @@ body {
 .navbar {
     width: 100%;
     background-color: white;
+    flex-direction: column;
+}
+.navbar-container {
     flex-direction: row;
+    margin-bottom: 10px;
 }
 .logo {
     width: 50%;
-    color: darkgrey;
+    color: black;
+    margin-left: 20px;
 }
 .navbar-buttons {
     width: 50%;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .navbar-buttons a{
     margin: 15px;
     color: gray;
 }
-.top-line {
-    background-color: gray;
-    width: 95%;
+.line {
+    background-color: rgb(211, 211, 211);
+    width: 100%;
     height: 1px;
+    align-self: center;
 }
 .container {
     flex-direction: column;
+    margin-left: 20px;
 }
 .guide {
     flex-direction: row;
+    align-items: center;
     width: 100%;
+    margin-top: 15px;
+}
+.guide a{
+    color: gray;
+    margin: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.guide-active {
+    color: black;
 }
 .main {
     flex-direction: row;
@@ -45,17 +62,64 @@ body {
     width: 100%;
 }
 .main-left {
-    width: 55%;
+    width: 650px;
+    height: 550px;
     flex-direction: column;
 }
+.main-left-top {
+    width: 100%;
+    height: 70%;
+}
+.main-image {
+    background-image: url("src/assets/product3.jpeg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
 .main-left-bottom {
+    width: 100%;
+    height: 30%;
     flex-direction: row;
 }
-.main-left-bottom img{
+.product-image1 {
+    background-image: url("src/assets/product3.jpeg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 33%;
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.product-image2 {
+    background-image: url("src/assets/product2.jpeg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.product-image3 {
+    background-image: url("src/assets/product1.jpeg");
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 .main-right {
     width: 45%;
+    flex-direction: column;
+    justify-content: start;
+    align-self: center;
+    padding-left: 20px;
 }
 h1 {
     color: black;
@@ -63,8 +127,13 @@ h1 {
 a {
     text-decoration: none;
 }
+.main-right p{
+    color: gray;
+}
 .main-right a{
-    background-color: gray;
+    background-color: rgb(49, 49, 49);
     color: white;
-    padding: 10px;
+    padding: 20px 20px;
+    width: 150px;
+    text-align: center;
 }
